@@ -1,0 +1,24 @@
+{
+  "name": "figma-files-cli",
+  "version": "0.1.0",
+  "description": "CLI wrapper for the Figma REST API — files, frames, image export, design tokens. Built with api2cli.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "figma-files-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/index.js --target bun",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "keywords": ["figma", "cli", "api", "design", "api2cli"]
+}
